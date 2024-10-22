@@ -18,6 +18,7 @@
 <h2>Key Objectives</h2>
 <h3>Virtual Machine Setup</h3>
 
+- Virtual network creation
 - Configure the virtual machine for the Domain Controller.  
 - Set up the virtual machine for the Client
 
@@ -33,23 +34,40 @@
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines)
 - Remote Desktop
-- Active Directory Domain Services
-- PowerShell
+- Command Prompt
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
+- Windows (Windows Server 2019 Datacenter)
 - Windows 10 (21H2)
 
 
 <h2>Configuration Steps</h2>
 
-<h3>&#9312; Create the Domain Controller</h3>
+<h3>&#9312; Virtual network configuration</h3>
 
-- Create a virtual machine on Azure.
-- Name it DC-01 
+- Create a virtual network with the below specifications
+  
+  ![v1](https://github.com/user-attachments/assets/d0bae1c7-8e0f-44b4-9622-29505437388e)
+  ![v2](https://github.com/user-attachments/assets/44351d1d-f474-4c3a-8392-a2597ae6355f)
+  
+<h3>&#9313; Domain controller VM setup</h3>
+
+- Set up the first virtual machine (VM) to serve as the domain controller.
+  
+  ![VM1](https://github.com/user-attachments/assets/b2647f4c-c676-48ee-993c-0f9715143069)
+  ![VM2](https://github.com/user-attachments/assets/65e1ca6a-9f58-4bf5-b44c-0a4a56c11764)
+
+* For the network interface,select the virtual network already created 
+  
+  ![VM3](https://github.com/user-attachments/assets/0071d412-02d9-427a-8517-3de905c662ab)
+* After reviewing your settings, click on "Review + Create," and then select "Create" once the validation is complete to set up your virtual machine.
+
+  <h3>&#9314; Domain controller network settings</h3>
+  
+  ![VM4](https://github.com/user-attachments/assets/c7a5a28f-5753-42bf-b73b-54d33bd25609)
 - Select Windows Server 2022: Azure Edition - x64 Gen2 as the image
 
 
