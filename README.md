@@ -1,28 +1,29 @@
-<h1>Foundation: Azure VM setup and Network Vonfiguration</h1>
+<h1>Foundation: Azure VM setup and Network Configuration</h1>
 
 <p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
+  <img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180821105618/Microsoft_Azure_Logo.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
 
 
 
-<p>Welcome to the inaugural project in a comprehensive series of tutorials focused on Azure and Active Directory implementation. This initial project serves as the foundational cornerstone and setup for the subsequent  parts of this tutorial series. The primary objective is to lay the groundwork for a simple lab environment on Azure to simulate the environment in which Active Directory is employed within an enterprise setting.
+<p>Welcome to the first tutorial in our Active Directory series. This project establishes the foundation for future tutorials, aiming to create a simple lab environment on Azure that simulates the use of Active Directory in an enterprise setting.
 </p>
 
 <h2>Overview </h2>
 
-<p>In this first project, I will configure and interconnect two virtual machines, each assuming distinct roles. The first virtual machine will be designated as the Domain Controller. The second virtual machine will be configured as the Client.</p>
+<p>In this project, I will set up and connect two virtual machines in Azure: one as the Domain Controller and the other as the Client.</p>
 
 <h2>Key Objectives</h2>
 <h3>Virtual Machine Setup</h3>
 
--  Configure the Domain Controller virtual machine
--  Establish the Client virtual machine
+- Configure the virtual machine for the Domain Controller.  
+- Set up the virtual machine for the Client
 
 <h3>Remote Connectivity</h3>
 
-- Enable a connection using remote desktop connection
+- Establish a connection using Remote Desktop Connection.
 
 <h3> Traffic Inspection</h3>
 
