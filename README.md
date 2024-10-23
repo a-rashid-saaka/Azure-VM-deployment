@@ -51,6 +51,10 @@
 - Create a virtual network with the below specifications
   
   ![v1](https://github.com/user-attachments/assets/d0bae1c7-8e0f-44b4-9622-29505437388e)
+  
+- You can change the IP addresses, but for this exercise will maintain the default IP addresses
+  
+
   ![v2](https://github.com/user-attachments/assets/44351d1d-f474-4c3a-8392-a2597ae6355f)
 <br>
   
@@ -68,7 +72,9 @@
 
 <br>
   <h3>&#9314; Change domain controller private IP address to static</h3>
-* Inside the VM, Select "Network Settings", and click on the network interface card
+  
+  - Inside the VM, Select "Network Settings", and click on the network interface card
+
   
 ![n1](https://github.com/user-attachments/assets/b1cb35d5-a772-4d58-a1bc-efe0b5b69b82)
 
