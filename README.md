@@ -71,6 +71,14 @@
 * After reviewing your settings, click on "Review + Create," and then select "Create" once the validation is complete to set up your virtual machine.
 
 <br>
+
+- You can now access your VM with Remote Desktop and your public IP address
+
+  
+  ![PD1](https://github.com/user-attachments/assets/41a5d32e-1257-4f45-8312-6207f4bfc2bd)
+![R2](https://github.com/user-attachments/assets/5da08d2b-eda7-4091-86a3-286a046171f1)
+
+<br>
   <h3>&#9314; Change domain controller private IP address to static</h3>
   
   - Inside the VM, Select "Network Settings", and click on the network interface card
@@ -100,8 +108,37 @@
 
 ![CL2](https://github.com/user-attachments/assets/cb3ee024-f022-44db-98be-d350275641c5)
 
-  
+* After reviewing your settings, click on "Review + Create," and then select "Create" once the validation is complete to set up your virtual machine.
 
+
+- Just like the domain controller VM, you can access the client VM with Remote Desktop and the public IP address
+<br>
+
+
+ <h3>&#9315; 
+ Establish connection between domain controller and client VMs
+</h3>
+
+- At this point you should be logged into the domain controller and client VM
+
+
+- From the client VM ping the domain controller VM to test connectivity
+
+  
+  ![Ping1](https://github.com/user-attachments/assets/54b6a6b7-5d29-4c5e-a865-a0097c81861d)
+
+
+    - We can see the request timed out without receiving a response. This is because ICMPv4 traffic is blocked by the domain contoller VM's firewall.
+    To allow ICMPv4 traffic,follow the following steps: <br>
+
+    Inside the domain controller VM access the windows firewall advanced settings -> Select "Inbound Rules" -> Virtual Machine Monitoring(Echo Request-ICMPv4-In) -> Select "Enable Rule"
+
+    ![C2](https://github.com/user-attachments/assets/4aa39d72-59d9-47aa-949d-dd734ec192e5)
+
+  <br>
+
+- Now go back to the client machine and try to ping the domain controller machine again. Echo responses should be received,indicating a successful connection
+    ![PING2](https://github.com/user-attachments/assets/d8a15c70-3208-4d74-bed1-dfd42fe44dfd)
 
 
 
