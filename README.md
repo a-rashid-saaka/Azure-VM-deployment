@@ -41,7 +41,7 @@
 <h2>Operating Systems Used </h2>
 
 - Windows (Windows Server 2019 Datacenter)
-- Windows 10 (21H2)
+- Windows (Windows 10 Pro)
 
 
 <h2>Configuration Steps</h2>
@@ -52,7 +52,7 @@
   
   ![v1](https://github.com/user-attachments/assets/d0bae1c7-8e0f-44b4-9622-29505437388e)
   ![v2](https://github.com/user-attachments/assets/44351d1d-f474-4c3a-8392-a2597ae6355f)
-
+<br>
   
 <h3>&#9313; Domain controller VM setup</h3>
 
@@ -66,15 +66,35 @@
   ![VM3](https://github.com/user-attachments/assets/0071d412-02d9-427a-8517-3de905c662ab)
 * After reviewing your settings, click on "Review + Create," and then select "Create" once the validation is complete to set up your virtual machine.
 
-
-  <h3>&#9314; Domain controller network settings</h3>
+<br>
+  <h3>&#9314; Change domain controller private IP address to static</h3>
 * Inside the VM, Select "Network Settings", and click on the network interface card
   
 ![n1](https://github.com/user-attachments/assets/b1cb35d5-a772-4d58-a1bc-efe0b5b69b82)
 
-* Select  IP configuration -> ipconfig1, and change the Private IP address allocation to static.
+- Select  IP configuration -> ipconfig1, and change the Private IP address allocation to static.
   
   ![n2](https://github.com/user-attachments/assets/90d2db55-cdf6-4bfd-aeed-23d071e9d233)
+<br>
+   <h3>&#9315; Client VM setup</h3>
+   
+  - Setting up a client VM follows the same process as setting up the domain controller VM. The only differences are:<br>
+   I. Use of different name for client VM <br>
+   II. Use of different disk image: specifiaclly Windows (Windows 10 Pro)<br>
+   III. Use of different credentials for administrator account
+
+  
+![CL1](https://github.com/user-attachments/assets/54b77773-519d-4ccc-8289-79c0eee22f0d)
+ ![C2](https://github.com/user-attachments/assets/8d2a41a7-743d-455e-9427-42a04b28cdcd)
+
+<br>
+
+ - Because we used the same virtual network for this VM, the VM take the next available private IP address in the address space of the virtual network.
+
+
+![CL2](https://github.com/user-attachments/assets/cb3ee024-f022-44db-98be-d350275641c5)
+
+  
 
 
 
