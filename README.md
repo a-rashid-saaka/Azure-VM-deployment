@@ -15,7 +15,7 @@
 
 <p>In this project, I will set up and connect two virtual machines in Azure: one as the Domain Controller and the other as the Client.</p>
 
-<h2>Key Objectives</h2>
+<h2>Objectives</h2>
 <h3>Virtual Machine Setup</h3>
 
 - Virtual network creation
