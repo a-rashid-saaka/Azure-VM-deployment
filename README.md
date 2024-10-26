@@ -1,4 +1,4 @@
-<h1 align="center">Foundation: Azure VM setup and Network Configuration</h1>
+<h1 align="center">Foundation: Azure VM Setup and Network Configuration</h1>
 
 <p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
