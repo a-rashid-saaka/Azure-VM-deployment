@@ -110,6 +110,11 @@
 ![CL1](https://github.com/user-attachments/assets/54b77773-519d-4ccc-8289-79c0eee22f0d)
  ![C2](https://github.com/user-attachments/assets/8d2a41a7-743d-455e-9427-42a04b28cdcd)
 
+
+- After reviewing your settings, click "Review + Create," then select "Create" once the validation is complete to set up your virtual machine.
+
+
+- Just like the domain controller VM, you can access the client VM with Remote Desktop and the public IP address
 <br>
 
  - Because we used the same virtual network for this VM, the VM takes the next available private IP address in the virtual network's address space.
@@ -117,10 +122,7 @@
 
 ![CL2](https://github.com/user-attachments/assets/cb3ee024-f022-44db-98be-d350275641c5)
 
-* After reviewing your settings, click "Review + Create," then select "Create" once the validation is complete to set up your virtual machine.
 
-
-- Just like the domain controller VM, you can access the client VM with Remote Desktop and the public IP address
 <br>
 <br>
 <br>
