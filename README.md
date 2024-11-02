@@ -8,7 +8,7 @@
 
 
 
-<p>Welcome to the first tutorial in our Active Directory series. This project establishes the foundation for future tutorials, aiming to create a simple lab environment on Azure that simulates the use of Active Directory in an enterprise setting.
+<p>Welcome to the first part of our Active Directory series. This project establishes the foundation for future projects, aiming to create a simple lab environment on Azure that simulates the use of Active Directory in an enterprise setting.
 </p>
 
 <h2>Overview </h2>
